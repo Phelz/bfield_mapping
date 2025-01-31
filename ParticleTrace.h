@@ -1,25 +1,27 @@
 #pragma once
 
+using namespace std;
+
 #include <vector>
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <sstream>
 
-using namespace std;
+#include "constants.h"
 
 class ParticleTrace {
 private:
-    vector<vector<long double>> segment_start;
-    vector<vector<long double>> segment_end;
+    vector<vector<PRECISION_TYPE>> segment_start;
+    vector<vector<PRECISION_TYPE>> segment_end;
     size_t num_segments;
 
 public:
     ParticleTrace(const string& filename);
     void readCSV(const string& filename);
 
-    const vector<vector<long double>>& getSegmentStart() const { return segment_start; }
-    const vector<vector<long double>>& getSegmentEnd() const { return segment_end; }
+    const vector<vector<PRECISION_TYPE>>& getSegmentStart() const { return segment_start; }
+    const vector<vector<PRECISION_TYPE>>& getSegmentEnd() const { return segment_end; }
     const size_t getNumSegments() const { return num_segments; }
 };
 
@@ -35,7 +37,7 @@ void ParticleTrace::readCSV(const string& filename) {
     }
 
     string line;
-    vector<vector<long double>> positions;
+    vector<vector<PRECISION_TYPE>> positions;
 
     // Read the first line (header)
     getline(file, line);
@@ -44,7 +46,7 @@ void ParticleTrace::readCSV(const string& filename) {
     while (getline(file, line)) {
         stringstream ss(line);
 
-        vector<long double> row;
+        vector<PRECISION_TYPE> row;
         string value;
         int col_indx = 0;
 

@@ -1,21 +1,19 @@
 #pragma once
 
+using namespace std;
+
 #include <vector>
 #include <cmath>
 #include <cstdint>
 
-using namespace std;
+#include "constants.h"
 
-const long double PI = 3.141592653589793238462643383279502884197169399375105820974944L;
-const long double MU0 = 1.2566370612720e-6L;
-const long double TOO_SMALL = 1e-12L;
-
-vector<long double> cross_product(const vector<long double>& a, const vector<long double>& b);
-long double dot_product(const vector<long double>& a, const vector<long double>& b);
-vector<long double> subtract(const vector<long double>& a, const vector<long double>& b);
-vector<long double> add(const vector<long double>& a, const vector<long double>& b);
-vector<long double> scale(const vector<long double>& v, long double scalar);
-long double norm(const vector<long double>& v);
+vector<PRECISION_TYPE> cross_product(const vector<PRECISION_TYPE>& a, const vector<PRECISION_TYPE>& b);
+PRECISION_TYPE dot_product(const vector<PRECISION_TYPE>& a, const vector<PRECISION_TYPE>& b);
+vector<PRECISION_TYPE> subtract(const vector<PRECISION_TYPE>& a, const vector<PRECISION_TYPE>& b);
+vector<PRECISION_TYPE> add(const vector<PRECISION_TYPE>& a, const vector<PRECISION_TYPE>& b);
+vector<PRECISION_TYPE> scale(const vector<PRECISION_TYPE>& v, PRECISION_TYPE scalar);
+PRECISION_TYPE norm(const vector<PRECISION_TYPE>& v);
 
 
 
