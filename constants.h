@@ -2,10 +2,11 @@
 
 const long double PI = 3.141592653589793238462643383279502884197169399375105820974944L;
 const long double MU0 = 1.2566370612720e-6L;
-const long double TOO_SMALL = 1e-12L;
+const long double TOO_SMALL = 1e-16L;
 
-//#define PRECISION_TYPE double
-#define PRECISION_TYPE long double
+//typedef double PRECISION_TYPE;
+typedef long double PRECISION_TYPE;
+
 
 constexpr auto OUTPUT_PRECISION = 20;
 constexpr auto NUM_THREADS = 4;

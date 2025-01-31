@@ -11,6 +11,7 @@ using namespace std;
 #include "constants.h"
 
 class ParticleTrace {
+
 private:
     vector<vector<PRECISION_TYPE>> segment_start;
     vector<vector<PRECISION_TYPE>> segment_end;

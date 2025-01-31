@@ -130,13 +130,11 @@
   <ItemGroup>
     <ClCompile Include="biot_savart_routines.cpp" />
     <ClCompile Include="mian.cpp" />
-    <ClCompile Include="vector_utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="biot_savart_routines.h" />
     <ClInclude Include="constants.h" />
     <ClInclude Include="ParticleTrace.h" />
-    <ClInclude Include="vector_utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

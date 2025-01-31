@@ -21,18 +21,12 @@
     <ClCompile Include="biot_savart_routines.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vector_utils.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="biot_savart_routines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ParticleTrace.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="vector_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="constants.h">
